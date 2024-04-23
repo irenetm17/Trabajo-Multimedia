@@ -134,3 +134,90 @@ body{
     color: #B6BABE;
     text-decoration: none;
 }
+
+#info{
+	font-family: "Bout Regular", monospace;
+	width: 50%;
+	text-align: justify;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+	font-size: 30px;
+}
+
+#info p{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#infoTabla{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-family: "Bout Regular", monospace;
+	width: 64%;
+	text-align: justify;
+	margin-left: 18%;
+	color: white;
+	font-size: 25px;
+}
+
+#infoImage1{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#infoImage2{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#infoImage3{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#infoImage4{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#decoImage{
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 25%;
+	margin-bottom: -22px;
+}
+
+#hrDeco{
+	width: 60%;
+	align: center;
+	height: 5px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border-color: whitesmoke;
+	margin-top: 0px;
+}
+
+hr{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 5px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border-color: whitesmoke;
+}
