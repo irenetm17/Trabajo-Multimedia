@@ -1,5 +1,13 @@
-#banner{
-	width: 100%;
-	height: 250px;
+.banner {
+  width: 100%; 
+  max-width: 2000px; 
 }
-
+#Banner {
+  width: 100%; 
+  height: 250px;
+}
+@font-face {
+  font-family: Bout-Regular;
+  src: url('Fuentes/Bout-Regular.otf') format('opentype'); 
+}
+ 
