@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branch out</title>
+  <link rel="stylesheet" type="text/css" href="Estilos/Style.css" />
+  <style>
+    body {
+      font-family: "Bout", sans-serif;
+    }
+    /* Add some basic styling to the comment form */
+    #comment-form {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #comment-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    #comment-form input[type="text"],
+    #comment-form textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    #comment-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #comment-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body style="background-image: url(Imagenes/cielo.png)">
+  <section id="inicio">
+
+    <!--Menú Dropdown-->
+    <nav class="nav">
+      <div class="nav_container">
+
+        <a href="#menu" class="nav_menu">
+          <img src="./Imagenes/assets_menu/menu.svg" class="nav_icon">
+        </a>
+
+        <a href="#" class="nav_menu nav_menu--second">
+          <img src="./Imagenes/assets_menu/close.svg" class="nav_icon">
+        </a>
+
+        <ul class="dropdown" id="menu">
+          <li class="dropdown_list">
+            <a href="#" class="dropdown_link">
+              <img src="./Imagenes/assets_menu/house.svg" class="dropdown_icon">
+              <span class="dropdown_span">Inicio</span>
+            </a>
+          </li>
+
+          <li class="dropdown_list">
+            <a href="#" class="dropdown_link">
+              <img src="./Imagenes/assets_menu/projects.svg" class="dropdown_icon">
+              <span class="dropdown_span"> Projects</span>
+              <img src="./Imagenes/assets_menu/down.svg" class="dropdown_arrow">
+
+              <input type="checkbox" class="dropdown_check">
+            </a>
+            <div class="dropdown_content">
+              <ul class="dropdown_sub">
+                <li class="dropdown_li">
+                  <a href="#" class="dropdown_anchor">Project 1</a>
+                </li>
+
+                <li class="dropdown_li">
+                  <a href="#" class="dropdown_anchor">Project 2</a>
+                </li>
+
+                <li class="dropdown_li">
+                  <a href="#" class="dropdown_anchor">Project 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown_list">
+            <a href="#" class="dropdown_link">
+              <img src="./Imagenes/assets_menu/help.svg" class="dropdown_icon">
+              <span class="dropdown_span">Preguntas frecuentes</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <!--Banner-->
+    <div>
+      <center>
+        <img id="banner" src="Imagenes/banner.jpeg"/>
+      </center>
+    </div>
+
+    <!--Caja de comentarios-->
+    <div>
+      <h2>Comentarios</h2>
+      <!-- Add a form for users to submit comments -->
+      <form id="comment-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+
+  </section>
+</body>
+</html>
