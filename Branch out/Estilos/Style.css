@@ -7,7 +7,10 @@
   height: 250px;
 }
 @font-face {
-  font-family: Bout-Regular;
-  src: url('Fuentes/Bout-Regular.otf') format('opentype'); 
+  font-family: "Bout";
+  src: url("/Fuentes/Bout.otf") format('opentype');
 }
- 
+
+p{
+	font-family: "Bout";
+}
