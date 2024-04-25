@@ -280,7 +280,7 @@ hr{
 		border-color: transparent;
 	}
 
-	.container{
+	.FAQs{
 		width: 60%;
 		min-width: 500px;
 		border: 3px solid whitesmoke;
@@ -294,10 +294,28 @@ hr{
 		background-color: transparent ;
 		margin: 10px 10px;
 		padding: 10px 40px;
-		border-radius: 5px;
+		
 	}
 	.toggle{
-		
+		width: 100%;
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 15px;
+		border-color: whitesmoke;
+		margin: 10px 10px;
+		padding: 10px 5px;
+
+	}
+	.contenido{
+		position:relative;
+		line-height: 20px;
+		text-align: justify;
+		height: 0;
+		overflow:hidden;
+		transition: all 2s ease-in-out .5s;
+
 	}
 	
 
