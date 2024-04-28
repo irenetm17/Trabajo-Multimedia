@@ -5,7 +5,7 @@ for(i=0; i<acc.length; i++){
 	acc[i].addEventListener("click",function(){
 		this.classList.toggle("active");
 
-		let contenido=this.nextElementSibling;
+		let contenido=document.getElementsByClassName('contenido');
 		if(contenido.style.display ==="block"||contenido.style.display===""){
 			contenido.style.display = "none";
 		}else{
