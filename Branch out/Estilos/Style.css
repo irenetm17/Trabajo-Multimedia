@@ -326,12 +326,13 @@ hr{
 }
 
 .FAQs{
+
 	width: 60%;
 	min-width: 500px;
 	border: 3px solid whitesmoke;
 	margin:40px 40px;
 	position: relative;
-	transform: translate(-60%,+10%);
+	transform: translate(-55%,+10%);
 	top: 50%;
 	left: 50%;
 }
@@ -349,7 +350,7 @@ hr{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-size: 15px;
+	font-size: 20px;
 	border-color: whitesmoke;
 	margin: 10px 10px;
 	padding: 10px 5px;
@@ -362,7 +363,9 @@ hr{
 
 .contenido{
     font-family: Bout;
+    font-size: 20 px;
 	position:relative;
+	margin: 10px 10px;
 	line-height: 20px;
 	text-align: justify;
 	display: none;
