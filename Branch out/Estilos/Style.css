@@ -1,6 +1,16 @@
-#banner{
-	width: 100%;
-	height: 250px;
+#banner {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+	opacity: 0.8;
+}
+.banner-container {
+    display: flex;
+    justify-content: center; 
+    background-color: black;
+    height: 555px;
+    width: 100%;
+    overflow: hidden;
 }
 
 *{
@@ -11,14 +21,20 @@
 
 @font-face {
     font-family: "Bout";
-    src: url("./Fuentes/Bout.otf");
+    src: url("./Fuentes/Bout.otf") format('opentype');
 }
 
 body{
-    font-family: Arial;
+    font-family: Bout;
+	padding-top: 70px;
 }
 
 .nav{
+	position: fixed;
+    top: 0;
+    left: 0;         
+    width: 100%;
+    z-index: 1000;
     background-color: #191c40;
     --img1: scale(1);
     --img2: scale(0);
@@ -31,6 +47,7 @@ body{
 }
 
 .nav_container{
+    font-family: "Bout";
     width: 90%;
     margin:0 auto;
     height: 70px;
@@ -69,8 +86,8 @@ body{
     width: 75%;
     max-width: 300px;
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: 70px;
+	height: calc(100vh - 70px);
     padding: 1em;
     display: grid;
     align-content: center;
@@ -135,14 +152,27 @@ body{
     text-decoration: none;
 }
 
-#info{
-	font-family: "Bout Regular", monospace;
+
+#info1{
+	font-family: "Bout", monospace;
 	width: 50%;
 	text-align: justify;
 	margin-left: 25%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	color: white;
+	font-size: 30px;
+}
+
+#info2{
+	font-family: "Bout", monospace;
+	width: 50%;
+	text-align: justify;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+	background-color: #002337;
 	font-size: 30px;
 }
 
@@ -154,7 +184,7 @@ body{
 #infoTabla{
 	padding-top: 20px;
 	padding-bottom: 30px;
-	font-family: "Bout Regular", monospace;
+	font-family: "Bout", monospace;
 	width: 64%;
 	text-align: justify;
 	margin-left: 18%;
@@ -203,7 +233,7 @@ body{
 
 #hrDeco{
 	width: 60%;
-	align: center;
+	box-align: center;
 	height: 5px;
 	background-color: whitesmoke;
 	border-radius: 10px;
@@ -222,6 +252,161 @@ hr{
 	border-color: whitesmoke;
 }
 
+
+.Colaboraciones{
+	color: white;
+	margin-left:14% ;
+	margin-right:14%;
+}
+
+.Colaboraciones > div{
+	display: inline-block;
+	margin:20px 20px;	
+	width: 200px;
+	height: 320px;
+	border-radius: 4px;
+	border:	3px solid whitesmoke;
+	position: relative;
+	vertical-align: middle;
+}
+.texto div{
+	color:white;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#precio, #donacion{
+	margin-left: 30%;
+}
+
+.texto{
+	margin:20px 20px;
+}
+
+.boton{
+	margin:20px 20px;
+	height:30px;
+	width: 80px;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+	position: absolute;
+	top: 70%;
+}
+
+#Contribuir{
+	margin: 0px 0px 1em 1em;
+	color: white;
+	width: 120px;
+	background-color: #5EC172;
+	top: 80%;
+}
+
+#VentanaDonacion{
+	visibility: hidden;
+	position: fixed;
+	top:35%;
+	left: 76%;
+	padding: 10px ;
+	border-radius: 4px;
+	border:	3px solid whitesmoke;
+	background-image: url('Imagenes/cielo.png');
+}
+
+#cerrar{
+	position: absolute;
+	top: 3%;
+	left: 90%;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.FAQs{
+
+	width: 60%;
+	min-width: 500px;
+	border: 3px solid whitesmoke;
+	margin:40px 40px;
+	position: relative;
+	transform: translate(-55%,+10%);
+	top: 50%;
+	left: 50%;
+}
+
+.pregunta{
+	background-color: transparent ;
+	margin: 10px 10px;
+	padding: 10px 40px;
+}
+
+.accordion-container{
+    font-family: Bout;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+	border-color: whitesmoke;
+	margin: 10px 10px;
+	padding: 10px 5px;
+	cursor:pointer;
+}
+
+.active,.accordion-container:hover{
+	background-color: #ccc;
+}
+
+.contenido{
+    font-family: Bout;
+    font-size: 20 px;
+	position:relative;
+	margin: 10px 10px;
+	line-height: 20px;
+	text-align: justify;
+	display: none;
+	overflow:hidden;
+}
+	
+#titulo{
+	font-family: "Bout", monospace;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: rgb(253, 238, 188);
+	font-size: 60px;
+}
+	
+#bot{
+	background-color: transparent;
+	font-family: "Bout";
+	color:rgb(184, 187, 191);
+	border:none;
+	font-size: 15px;
+}
+
+#bot:hover{
+	background-color:rgb(184, 187, 191);
+	color:rgb(60, 67, 86); 
+}
+
+#disclaimer{
+	background-color: #191c40;
+	color:white;
+	font-family: "Bout";
+    height: 60px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
 	.Colaboraciones{
 		color: white;
 		margin-left:14% ;
@@ -230,10 +415,12 @@ hr{
 	.Colaboraciones > div{
 		display: inline-block;
 		margin:20px 20px;	
-		width: 30%;
-		height: 200px;
+		width: 200px;
+		height: 320px;
 		border-radius: 4px;
 		border:	3px solid whitesmoke;
+		position: relative;
+		vertical-align: middle;
 	}
 	.texto div{
 		color:white;
@@ -241,7 +428,7 @@ hr{
 		margin-bottom: 10px;
 	}
 	#precio, #donacion{
-		margin-left: 60%;
+		margin-left: 30%;
 	}
 	.texto{
 		margin:20px 20px;
@@ -252,31 +439,100 @@ hr{
 		width: 80px;
 		border-radius: 5px;
 		border: 0px;
+		cursor: pointer;
+		position: absolute;
+		top: 70%;
 	}
 	#Contribuir{
-		margin: 0px 0px 1em 9em;
+		margin: 0px 0px 1em 1em;
 		color: white;
 		width: 120px;
 		background-color: #5EC172;
+		top: 80%;
 	}
 	#VentanaDonacion{
 		visibility: hidden;
 		position: fixed;
 		top:35%;
-		left: 35%;
-		padding: 100px 100px;
-		background-color: white;
+		left: 76%;
+		padding: 10px ;
 		border-radius: 4px;
 		border:	3px solid whitesmoke;
-		background-image: url('Imagenes/cielo.png');
+		background-image: url('./Imagenes/cielo.png');
 	}
 	#cerrar{
 		position: absolute;
 		top: 3%;
-		left: 94%;
+		left: 90%;
 		width: 20px;
 		height: 20px;
 		background-color: transparent;
 		border-color: transparent;
+		color: white;
+		cursor: pointer;
 	}
 
+	
+	#titulo{
+		font-family: "Bout", monospace;
+		width: 50%;
+		text-align: center;
+		margin-left: 25%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		color: #fdeebc;
+		font-size: 60px;
+	}
+	
+	#bot{
+		background-color: transparent;
+		font-family: "Bout";
+		color:rgb(184, 187, 191);
+		border:none;
+		font-size: 15px;
+	}
+
+	#bot:hover{
+		background-color:rgb(184, 187, 191);
+		color:rgb(60, 67, 86); 
+	}
+	#disclaimer{
+		background-color: #191c40;
+		color:white;
+		font-family: "Bout";
+    	height: 60px;
+    	display: grid;
+    	justify-content: space-between;
+    	align-items: center;
+    	overflow: hidden;
+	}
+	#titulo_descripcion{
+		border-radius: 20px;
+		background-color: #fffdba;
+		background-image: url("./Imagenes/tierra.png");
+		font-family: "Bout", monospace;
+		width: 50%;
+		text-align: center;
+		margin-left: 25%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		color: #0d1a4a;
+		font-size: 60px;
+	}
+	#us{
+		color: #070d38;
+		text-align: justify;
+		font-size: 30px;
+		margin: 10px 10px;
+		padding: 10px 40px;
+		background-image: url('./Imagenes/tierra.png');
+    	background-position: center; 
+	}
+	#redes{
+		font-family: "Bout", monospace;
+		margin:0px 35%;
+	}
+	#redes table{
+		 border-collapse: separate;
+    	border-spacing: 40px;
+	}
