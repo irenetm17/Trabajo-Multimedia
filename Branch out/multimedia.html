@@ -62,11 +62,26 @@
 							</ul>
 						</div>
 					</li>
+
+					<li class="dropdown_list">
+						<a href="#donar" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/dinero.png" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Donaciones</button>
+						</a>
+					</li>
+					
 	
 					<li class="dropdown_list">
 						<a href="#preg_freq" class="dropdown_link">
-							<img src="./Imagenes/assets_menu/help.svg" class="dropdown_icon">
+							<img src="./Imagenes/assets_menu/FAQs.png" class="dropdown_icon">
 							<button id="bot" class="dropdown_span">Preguntas frecuentes</button>
+						</a>
+					</li>
+
+					<li class="dropdown_list">
+						<a href="#coment" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/help.svg" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Deja tu comentario</button>
 						</a>
 					</li>
 	
@@ -99,8 +114,8 @@
 			</div>
     
 			<div id="info1">
-				<p>Es tu primer día de acampada, y antes de darte cuenta... ¡TE HAS QUEDADO DORMIDO! Ahora vas a tener que recorrer las montañas y bosques de tu alrededor para encontrar los palos que no has recogido cuando aún tenías tiempo. Pero cuidado... La noche está al caer, y si no tienes una fogata lista antes de que caiga la noche, te perderás entre los árboles del bosque</p>
-				
+				<p>Es tu primer día de acampada, y antes de darte cuenta... ¡TE HAS QUEDADO DORMIDO! Ahora vas a tener que recorrer las montañas y bosques de tu alrededor para encontrar los palos que no has recogido cuando aún tenías tiempo. Pero cuidado... La noche está al caer, y si no tienes una fogata lista antes de que caiga la noche, te perderás entre los árboles del bosque.</p>
+				<br>
 				<image id="infoImage1" src="Imagenes/portada.png"/>
 			</div>
 			<div id="info2">
@@ -111,12 +126,24 @@
 			<table id="infoTabla">
 				<tbody>
 					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Estilo visual</div>
+						</td>
+					</tr>
+					<tr>
 						<td><image id="infoImage2" src="Imagenes/game1.png"/></td>
 						<td><ul><li>Arte cartoony y pixel art, que dota de personalidad a la acción del juego.</li></ul></td>
 					</tr>
 					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Una nueva experiencia</div>
+						</td>
+					</tr>
+					<tr>
 						<td><ul><li>Niveles de plataformas clásicos, pero con un giro de tuerca que les dan un soplo de aire fresco. Al llegar a la meta, deberás recorrer el nivel de forma inversa</li></ul></td>
 						<td><image id="infoImage3" src="Imagenes/game2.png"/></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Un gran reto</div>
+						</td>
 					</tr>
 					<tr>
 						<td><image id="infoImage4" src="Imagenes/game3.png"/></td>
@@ -129,9 +156,9 @@
 		</section>
       	
 		<!--Donaciones -->
-
-		<div class="Colaboraciones">
-		<h1>Donaciones</h1>
+		<br><br>
+		<div id="donar" class="Colaboraciones">
+		<h1 id="titulo">Donaciones</h1>
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
@@ -321,22 +348,38 @@
 	</div>
 	</div>
 
-	<!--About us-->
+	<!--About us y redes sociales-->
 		<hr>
+		<div class="FAQs">
 			<div id="titulo">
 				<p>¿Quienes somos?</p>
 			</div>
-			<div>
-				<p id="info">Somos un grupo de apasionados por los videojuegos, reunidos para crear nuevas historias y aventuras entretenidas para diferentes públicos. Nos encanta juntarnos a diseñar posibles nuevas experiencias y ya hemos realizado diferentes proyectos, entre los que puedes encontrar (insetar imagenes)</p>
+			<div id="us">
+				<p>Somos un grupo de apasionados por los videojuegos, reunidos para crear nuevas historias y aventuras entretenidas para diferentes públicos. Nos encanta juntarnos a diseñar posibles nuevas experiencias y ya hemos realizado diferentes proyectos, entre los que puedes encontrar (insertar imagenes)</p>
 			</div>
-
-	<!--Redes Sociales-->
-	<br><br><br><br>
-		<div id="titulo">
+			<div id="titulo">
 				<p>Encuentranos en redes sociales:</p>
 			</div>
-			<!--Aquí hay que  insertar imagenes con enlaces que nos lleve a redes sociales (si es que queremos hacerlas) o simplemente botones decorativos-->
-		<hr>
+			<div id="redes">
+				<table>
+					<tbody>
+					<tr>
+						<td>
+							<a href="https://www.instagram.com/ubisoft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+							<img src="./Imagenes/instagram.png">
+						</td>
+						<td>
+							<a href="https://youtube.com/@IbaiLlanos?si=LsHkRH2agbTwUe9M">
+							<img src="./Imagenes/youtube.png">
+						</td>
+						<td>
+							<a href="https://www.tiktok.com/@charlidamelio">
+							<img src="./Imagenes/tiktok.png">
+						</td>
+					</tr>
+				</table>
+			</div> 
+		</div>
 
 			<!--FAQs-->
 			<div class="FAQs" id="preg_freq">
@@ -401,7 +444,7 @@
 		</br>
 		<br>
 	</br>
-			<h2>Leave a Comment</h2>
+			<h2 id="coment">Leave a Comment</h2>
 			<form id="comment-form">
 			  <label for="name">Name:</label><br>
 			  <input type="text" id="name" name="name"><br>
@@ -431,7 +474,7 @@
     <!--Disclaimer-->
     <br><br>
 		<div id="disclaimer">
-			<p>Esta página es ficticia. Ha sido creada por el grupo conformado por Marta, Víctor, Alejandro, Cristian, JiaJie, Sara e Irene, estudiantes de 1º Diseño y Desarrollo de Videojuegos para la asignatura de Multimedia, a cargo de los profesores David María Arribas y Cristian Rodrígez. El juego, Branch Out, fue creado por Víctor Gil para la asignatura de Diseño 2D.</p>
+			<p>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.</p>
 		</div>
 	</body>
 </html>
