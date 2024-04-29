@@ -469,47 +469,6 @@ hr{
 		cursor: pointer;
 	}
 
-	.FAQs{
-		width: 60%;
-		min-width: 500px;
-		border: 3px solid whitesmoke;
-		margin:40px 40px;
-		position: relative;
-		transform: translate(-60%,+10%);
-		top: 50%;
-		left: 50%;
-	}
-	.pregunta{
-		background-color: transparent ;
-		margin: 10px 10px;
-		padding: 10px 40px;
-		
-	}
-	.accordion-container{
-    	font-family: Bout;
-		width: 100%;
-		background-color: transparent;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-size: 15px;
-		border-color: whitesmoke;
-		margin: 10px 10px;
-		padding: 10px 5px;
-		cursor:pointer;
-	}
-	.active,.accordion-container:hover{
-		background-color: #ccc;
-	}
-
-	.contenido{
-    	font-family: Bout;
-		position:relative;
-		line-height: 20px;
-		text-align: justify;
-		display: none;
-		overflow:hidden;
-	}
 	
 	#titulo{
 		font-family: "Bout", monospace;
