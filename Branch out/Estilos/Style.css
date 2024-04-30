@@ -3,6 +3,12 @@
 	height: 250px;
 }
 
+#background{
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 *{
 	margin: 0;
 	padding: 0;
