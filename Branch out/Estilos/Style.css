@@ -351,6 +351,7 @@ hr{
 	align-items: center;
 	justify-content: space-between;
 	font-size: 20px;
+	color: white;
 	border-color: whitesmoke;
 	margin: 10px 10px;
 	padding: 10px 5px;
@@ -364,6 +365,7 @@ hr{
 .contenido{
     font-family: Bout;
     font-size: 20 px;
+    color: white;
 	position:relative;
 	margin: 10px 10px;
 	line-height: 20px;
