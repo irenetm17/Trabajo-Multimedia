@@ -458,7 +458,7 @@ hr{
 		padding: 10px ;
 		border-radius: 4px;
 		border:	3px solid whitesmoke;
-		background-image: url('Imagenes/cielo.png');
+		background-image: url('./Imagenes/cielo.png');
 	}
 	#cerrar{
 		position: absolute;
@@ -505,4 +505,34 @@ hr{
     	justify-content: space-between;
     	align-items: center;
     	overflow: hidden;
+	}
+	#titulo_descripcion{
+		border-radius: 20px;
+		background-color: #fffdba;
+		background-image: url("./Imagenes/tierra.png");
+		font-family: "Bout", monospace;
+		width: 50%;
+		text-align: center;
+		margin-left: 25%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		color: #0d1a4a;
+		font-size: 60px;
+	}
+	#us{
+		color: #070d38;
+		text-align: justify;
+		font-size: 30px;
+		margin: 10px 10px;
+		padding: 10px 40px;
+		background-image: url('./Imagenes/tierra.png');
+    	background-position: center; 
+	}
+	#redes{
+		font-family: "Bout", monospace;
+		margin:0px 35%;
+	}
+	#redes table{
+		 border-collapse: separate;
+    	border-spacing: 40px;
 	}

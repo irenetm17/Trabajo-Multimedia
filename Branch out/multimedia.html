@@ -62,11 +62,26 @@
 							</ul>
 						</div>
 					</li>
+
+					<li class="dropdown_list">
+						<a href="#donar" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/dinero.png" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Donaciones</button>
+						</a>
+					</li>
+					
 	
 					<li class="dropdown_list">
 						<a href="#preg_freq" class="dropdown_link">
-							<img src="./Imagenes/assets_menu/help.svg" class="dropdown_icon">
+							<img src="./Imagenes/assets_menu/FAQs.png" class="dropdown_icon">
 							<button id="bot" class="dropdown_span">Preguntas frecuentes</button>
+						</a>
+					</li>
+
+					<li class="dropdown_list">
+						<a href="#coment" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/help.svg" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Deja tu comentario</button>
 						</a>
 					</li>
 	
@@ -87,20 +102,23 @@
 		<div id="titulo">
 			<p> ¡Ya disponible la vista previa!</p>
 		</div>
+		<figure>
 		<center>
     	<iframe width="50%" height="430px" src="https://www.youtube.com/embed/Oi3GoJvnSyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<figcaption>Video promocional del juego</figcaption>
 		</center>
+		</figure>
 		<br><br><br><br>
 
     	<!--Info-->
 			<hr>
 			<div id="titulo">
-				<p id="Inicio">¡Run for your Branch!</p>
+				<p id="Inicio" lang="en">¡Run for your Branch!</p>
 			</div>
     
 			<div id="info1">
-				<p>Es tu primer día de acampada, y antes de darte cuenta... ¡TE HAS QUEDADO DORMIDO! Ahora vas a tener que recorrer las montañas y bosques de tu alrededor para encontrar los palos que no has recogido cuando aún tenías tiempo. Pero cuidado... La noche está al caer, y si no tienes una fogata lista antes de que caiga la noche, te perderás entre los árboles del bosque</p>
-				
+				<p>Es tu primer día de acampada, y antes de darte cuenta... ¡TE HAS QUEDADO DORMIDO! Ahora vas a tener que recorrer las montañas y bosques de tu alrededor para encontrar los palos que no has recogido cuando aún tenías tiempo. Pero cuidado... La noche está al caer, y si no tienes una fogata lista antes de que caiga la noche, te perderás entre los árboles del bosque.</p>
+				<br>
 				<image id="infoImage1" src="Imagenes/portada.png"/>
 			</div>
 			<div id="info2">
@@ -111,12 +129,24 @@
 			<table id="infoTabla">
 				<tbody>
 					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Estilo visual</div>
+						</td>
+					</tr>
+					<tr>
 						<td><image id="infoImage2" src="Imagenes/game1.png"/></td>
-						<td><ul><li>Arte cartoony y pixel art, que dota de personalidad a la acción del juego.</li></ul></td>
+						<td><ul><li>Arte cartoon y pixel art, que dota de personalidad a la acción del juego.</li></ul></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Una nueva experiencia</div>
+						</td>
 					</tr>
 					<tr>
 						<td><ul><li>Niveles de plataformas clásicos, pero con un giro de tuerca que les dan un soplo de aire fresco. Al llegar a la meta, deberás recorrer el nivel de forma inversa</li></ul></td>
 						<td><image id="infoImage3" src="Imagenes/game2.png"/></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Un gran reto</div>
+						</td>
 					</tr>
 					<tr>
 						<td><image id="infoImage4" src="Imagenes/game3.png"/></td>
@@ -129,13 +159,14 @@
 		</section>
       	
 		<!--Donaciones -->
-
-		<div class="Colaboraciones">
-		<h1>Donaciones</h1>
+		<br><br>
+		<div id="donar" class="Colaboraciones">
+		<h1 id="titulo">Donaciones</h1>
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Support</h3>
+				<h3 lang="en">Support</h3>
+
 				</div>
 				<div id="precio"><h3>1$</h3></div>
 				<p> Si aún no estas seguro/a de querer el juego pero quieres apoyarlo porque te ha gustado, tienes este tier para ti.</p>	
@@ -148,7 +179,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Mid support</h3>
+				<h3 lang="en">Mid support</h3>
 				</div>
 				<div id="precio"><h3>10$</h3></div>
 				<p>Acceso a información mensual sobre el desarrollo y algunos posters. </p>	
@@ -161,7 +192,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Big support</h3>
+				<h3 lang="en">Big support</h3>
 				</div>
 				<div id="precio"><h3>20$</h3></div>
 				<p> Consigue el juego cuando sea lanzado.</p>	
@@ -174,7 +205,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Lil helper</h3>
+				<h3 lang="en">Lil helper</h3>
 				</div>
 				<div id="precio"><h3>30$</h3></div>
 				<p> Consigue el juego, acceso a la Beta, el soundtrack y tendremos en cuenta tu opinión.</p>	
@@ -187,7 +218,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Helper</h3>
+				<h3 lang="en">Helper</h3>
 				</div>
 				<div id="precio"><h3>50$</h3></div>
 				<p> Acceso a la Beta del juego y tomaremos tu opinión sobre aspectos del juego y tu nombre aparecerá en los créditos finales.</p>	
@@ -200,7 +231,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Big helper</h3>
+				<h3 lang="en">Big helper</h3>
 				</div>
 				<div id="precio"><h3>70$</h3></div>
 				<p> Art book del juego, además podras hablar con nosotros sobre el juego y tendrás acceso a todos los lanzamientos de la Beta y Alpha mientras está en desarrollo.</p>	
@@ -213,7 +244,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Fan</h3>
+				<h3 lang="en">Fan</h3>
 				</div>
 				<div id="precio"><h3>100$</h3></div>
 				<p>Art book completo y a color con las ideas descartadas, ideas usadas, lore, etc. </p>	
@@ -226,7 +257,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Medium fan</h3>
+				<h3 lang="en">Medium fan</h3>
 				</div>
 				<div id="precio"><h3>150$</h3></div>
 				<p> Figura y posters de edicion limitada del personaje principal y el juego.</p>	
@@ -239,7 +270,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Big fan</h3>
+				<h3 lang="en">Big fan</h3>
 				</div>
 				<div id="precio"><h3>220$</h3></div>
 				<p> Tu nombre aparecerá en un coleccionable del juego y con un logro asociado con tu nombre.</p>	
@@ -252,7 +283,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Great fan</h3>
+				<h3 lang="en">Great fan</h3>
 				</div>
 				<div id="precio"><h3>300$</h3></div>
 				<p> Un nivel secreto dedicado a todos los donantes de este tier. Podreis ayudarnos a diseñar vuestro personaje y dialogo en este nivel. </p>
@@ -265,7 +296,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Huge fan</h3>
+				<h3 lang="en">Huge fan</h3>
 				</div>
 				<div id="precio"><h3>400$</h3></div>
 				<p> Crea un objeto en el juego que ayude a nuestro protagonista con tu nombre referenciado en él.</p>
@@ -278,7 +309,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Nº1 Fan</h3>
+				<h3 lang="en">Nº1 Fan</h3>
 				</div>
 				<div id="precio"><h3>500$</h3></div>
 				<p> Ayuda a crear un enemigo del juego, trabaja con nosotros en su creación, comportamientos y zonas de aparición.</p>	
@@ -291,7 +322,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Branch Out enjoyer</h3>
+				<h3 lang="en">Branch Out enjoyer</h3>
 				</div>
 				<div id="precio"><h3>750$</h3></div>
 				<p> Crea un nivel entero del juego junto a nosotros, su diseño, plataformar, monedas, enemigos y secretos.</p>	
@@ -304,7 +335,7 @@
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
-				<h3>Branch Out lover</h3>
+				<h3 lang="en">Branch Out lover</h3>
 				</div>
 				<div id="precio"><h3>1000$</h3></div>
 				<p> Trabaja con nosotros directamente en la creación del juego. Además recibirás todas las recompensas físicas y una figura exclusiva de nuestro personaje principal de 30cm.</p>	
@@ -321,22 +352,38 @@
 	</div>
 	</div>
 
-	<!--About us-->
+	<!--About us y redes sociales-->
 		<hr>
+		<div class="FAQs">
 			<div id="titulo">
 				<p>¿Quienes somos?</p>
 			</div>
-			<div>
-				<p id="info">Somos un grupo de apasionados por los videojuegos, reunidos para crear nuevas historias y aventuras entretenidas para diferentes públicos. Nos encanta juntarnos a diseñar posibles nuevas experiencias y ya hemos realizado diferentes proyectos, entre los que puedes encontrar (insetar imagenes)</p>
+			<div id="us">
+				<p>Somos un grupo de apasionados por los videojuegos, reunidos para crear nuevas historias y aventuras entretenidas para diferentes públicos. Nos encanta juntarnos a diseñar posibles nuevas experiencias y ya hemos realizado diferentes proyectos, entre los que puedes encontrar (insertar imagenes)</p>
 			</div>
-
-	<!--Redes Sociales-->
-	<br><br><br><br>
-		<div id="titulo">
+			<div id="titulo">
 				<p>Encuentranos en redes sociales:</p>
 			</div>
-			<!--Aquí hay que  insertar imagenes con enlaces que nos lleve a redes sociales (si es que queremos hacerlas) o simplemente botones decorativos-->
-		<hr>
+			<div id="redes">
+				<table>
+					<tbody>
+					<tr>
+						<td>
+							<a href="https://www.instagram.com/ubisoft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+							<img src="./Imagenes/instagram.png">
+						</td>
+						<td>
+							<a href="https://youtube.com/@IbaiLlanos?si=LsHkRH2agbTwUe9M">
+							<img src="./Imagenes/youtube.png">
+						</td>
+						<td>
+							<a href="https://www.tiktok.com/@charlidamelio">
+							<img src="./Imagenes/tiktok.png">
+						</td>
+					</tr>
+				</table>
+			</div> 
+		</div>
 
 			<!--FAQs-->
 			<div class="FAQs" id="preg_freq">
@@ -401,7 +448,7 @@
 		</br>
 		<br>
 	</br>
-			<h2>Leave a Comment</h2>
+			<h2 id="coment">Leave a Comment</h2>
 			<form id="comment-form">
 			  <label for="name">Name:</label><br>
 			  <input type="text" id="name" name="name"><br>
@@ -431,7 +478,7 @@
     <!--Disclaimer-->
     <br><br>
 		<div id="disclaimer">
-			<p>Esta página es ficticia. Ha sido creada por el grupo conformado por Marta, Víctor, Alejandro, Cristian, JiaJie, Sara e Irene, estudiantes de 1º Diseño y Desarrollo de Videojuegos para la asignatura de Multimedia, a cargo de los profesores David María Arribas y Cristian Rodrígez. El juego, Branch Out, fue creado por Víctor Gil para la asignatura de Diseño 2D.</p>
+			<p>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.</p>
 		</div>
 	</body>
 </html>
