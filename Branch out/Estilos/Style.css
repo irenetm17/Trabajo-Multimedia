@@ -1,0 +1,554 @@
+#banner {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+	opacity: 0.8;
+}
+.banner-container {
+    display: flex;
+    justify-content: center; 
+    background-color: black;
+    height: 555px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#background{
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bout";
+    src: url("./Fuentes/Bout.otf") format('opentype');
+}
+
+body{
+    font-family: Bout;
+	padding-top: 70px;
+}
+
+.nav{
+	position: fixed;
+    top: 0;
+    left: 0;         
+    width: 100%;
+    z-index: 1000;
+    background-color: #191c40;
+    --img1: scale(1);
+    --img2: scale(0);
+}
+
+.nav:has(.dropdown:target){
+    --img1: scale(0);
+    --img2: scale(1);
+    --clip: inset(0 0 0 0);
+}
+
+.nav_container{
+    font-family: "Bout";
+    width: 90%;
+    margin:0 auto;
+    height: 70px;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav_title{
+    color: #fff;
+    grid-area: title;
+}
+
+.nav_menu{
+    grid-area: img;
+    position: relative;
+    z-index: 10;
+    transform: var(--img1);
+}
+
+.nav_menu--second{
+    transform: var(--img2);
+}
+
+.nav_icon{
+    width: 30px;
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: rgb(60, 67, 86);
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 70px;
+	height: calc(100vh - 70px);
+    padding: 1em;
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+}
+
+.dropdown_list{
+    list-style: none;
+}
+
+.dropdown_link{
+    color: rgb(184, 187, 191);
+    padding: 1em .7em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    position: relative;
+}
+
+.dropdown_list:has(:checked){
+    --rows: 1fr;
+    --rotate: rotate(180deg);
+}
+
+.dropdown_check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.drowpdown_arrow{
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+}
+
+.dropdown_content{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+.dropdown_sub{
+    overflow: hidden;
+}
+
+.dropdown_li{
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+}
+
+.dropdown_anchor{
+    padding: 1em;
+    display: block;
+    color: #B6BABE;
+    text-decoration: none;
+}
+
+
+#info1{
+	font-family: "Bout", monospace;
+	width: 50%;
+	text-align: justify;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+	font-size: 30px;
+}
+#info2{
+	font-family: "Bout", monospace;
+	width: 50%;
+	text-align: justify;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+	font-size: 30px;
+}
+
+#info p{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#infoTabla{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-family: "Bout", monospace;
+	width: 64%;
+	text-align: justify;
+	margin-left: 18%;
+	color: white;
+	font-size: 25px;
+}
+
+#infoImage1{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#infoImage2{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#infoImage3{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#infoImage4{
+	border: 5px solid #f2eded;
+	border-radius: 7px;
+	width: 80%;
+	display: block;
+  	margin-left: 10%;
+}
+
+#decoImage{
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 25%;
+	margin-bottom: -22px;
+}
+
+#hrDeco{
+	width: 60%;
+	box-align: center;
+	height: 5px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border-color: whitesmoke;
+	margin-top: 0px;
+}
+
+hr{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 5px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border-color: whitesmoke;
+}
+
+
+.Colaboraciones{
+	color: white;
+	margin-left:14% ;
+	margin-right:14%;
+}
+
+.Colaboraciones > div{
+	display: inline-block;
+	margin:20px 20px;	
+	width: 200px;
+	height: 320px;
+	border-radius: 4px;
+	border:	3px solid whitesmoke;
+	position: relative;
+	vertical-align: middle;
+}
+.texto div{
+	color:white;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#precio, #donacion{
+	margin-left: 30%;
+}
+
+.texto{
+	margin:20px 20px;
+}
+
+.boton{
+	margin:20px 20px;
+	height:30px;
+	width: 80px;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+	position: absolute;
+	top: 70%;
+}
+
+#Contribuir{
+	margin: 0px 0px 1em 1em;
+	color: white;
+	width: 120px;
+	background-color: #5EC172;
+	top: 80%;
+}
+
+#VentanaDonacion{
+	visibility: hidden;
+	position: fixed;
+	top:35%;
+	left: 76%;
+	padding: 10px ;
+	border-radius: 4px;
+	border:	3px solid whitesmoke;
+	background-image: url('Imagenes/cielo.png');
+}
+
+#cerrar{
+	position: absolute;
+	top: 3%;
+	left: 90%;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.FAQs{
+
+	width: 60%;
+	min-width: 500px;
+	border: 3px solid whitesmoke;
+	margin:40px 40px;
+	position: relative;
+	transform: translate(-55%,+10%);
+	top: 50%;
+	left: 50%;
+}
+
+.pregunta{
+	background-color: transparent ;
+	margin: 10px 10px;
+	padding: 10px 40px;
+}
+
+.accordion-container{
+    font-family: Bout;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+	color: white;
+	border-color: whitesmoke;
+	margin: 10px 10px;
+	padding: 10px 5px;
+	cursor:pointer;
+}
+
+.active,.accordion-container:hover{
+	background-color: #ccc;
+}
+
+.contenido{
+    font-family: Bout;
+    font-size: 20 px;
+    color: white;
+	position:relative;
+	margin: 10px 10px;
+	line-height: 20px;
+	text-align: justify;
+	display: none;
+	overflow:hidden;
+}
+	
+#titulo{
+	font-family: "Bout", monospace;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: rgb(253, 238, 188);
+	font-size: 60px;
+}
+	
+#bot{
+	background-color: transparent;
+	font-family: "Bout";
+	color:rgb(184, 187, 191);
+	border:none;
+	font-size: 15px;
+}
+
+#bot:hover{
+	background-color:rgb(184, 187, 191);
+	color:rgb(60, 67, 86); 
+}
+
+#disclaimer{
+	background-color: #191c40;
+	color:white;
+	font-family: "Bout";
+    height: 60px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+	.Colaboraciones{
+		color: white;
+		margin-left:14% ;
+		margin-right:14%;
+	}
+	.Colaboraciones > div{
+		display: inline-block;
+		margin:20px 20px;	
+		width: 200px;
+		height: 320px;
+		border-radius: 4px;
+		border:	3px solid whitesmoke;
+		position: relative;
+		vertical-align: middle;
+	}
+	.texto div{
+		color:white;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	#precio, #donacion{
+		margin-left: 30%;
+	}
+	.texto{
+		margin:20px 20px;
+	}
+	.boton{
+		margin:20px 20px;
+		height:30px;
+		width: 80px;
+		border-radius: 5px;
+		border: 0px;
+		cursor: pointer;
+		position: absolute;
+		top: 70%;
+	}
+	#Contribuir{
+		margin: 0px 0px 1em 1em;
+		color: white;
+		width: 120px;
+		background-color: #5EC172;
+		top: 80%;
+	}
+	#VentanaDonacion{
+		visibility: hidden;
+		position: fixed;
+		top:35%;
+		left: 76%;
+		padding: 10px ;
+		border-radius: 4px;
+		border:	3px solid whitesmoke;
+		background-image: url('./Imagenes/cielo.png');
+	}
+	#cerrar{
+		position: absolute;
+		top: 3%;
+		left: 90%;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		border-color: transparent;
+		color: white;
+		cursor: pointer;
+	}
+
+	
+	#titulo{
+		font-family: "Bout", monospace;
+		width: 50%;
+		text-align: center;
+		margin-left: 25%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		color: #fdeebc;
+		font-size: 60px;
+	}
+	
+	#bot{
+		background-color: transparent;
+		font-family: "Bout";
+		color:rgb(184, 187, 191);
+		border:none;
+		font-size: 15px;
+	}
+
+	#bot:hover{
+		background-color:rgb(184, 187, 191);
+		color:rgb(60, 67, 86); 
+	}
+	#disclaimer{
+		background-color: #191c40;
+		color:white;
+		font-family: "Bout";
+    	height: 60px;
+    	display: grid;
+    	justify-content: space-between;
+    	align-items: center;
+    	overflow: hidden;
+	}
+	#titulo_descripcion{
+		border-radius: 20px;
+		background-color: #fffdba;
+		background-image: url("./Imagenes/tierra.png");
+		font-family: "Bout", monospace;
+		width: 50%;
+		text-align: center;
+		margin-left: 25%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		color: #0d1a4a;
+		font-size: 60px;
+	}
+	#us{
+		color: white;
+		text-align: justify;
+		font-size: 30px;
+		margin: 10px 10px;
+		padding: 10px 40px;
+		background-image: url('./Imagenes/tierra.png');
+    	background-position: center; 
+	}
+	#redes{
+		font-family: "Bout", monospace;
+		margin:0px 35%;
+	}
+	#redes table{
+		 border-collapse: separate;
+    	border-spacing: 40px;
+	}
+
+	#pruebacomentarios{
+		width: 61%;
+		min-width: 500px;
+		margin:40px 40px;
+		position: relative;
+		transform: translate(-55%,+10%);
+		top: 50%;
+		left: 50%;
+	}
