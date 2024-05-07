@@ -551,3 +551,16 @@ hr{
   		margin: 0 auto;
   		gap: 30px;
 	}
+	#objetivo {
+    height: auto;
+    width: 70%;
+    object-fit: cover;
+	opacity: 0.8;
+	}
+	.objetivo-container {
+    display: flex;
+    justify-content: center; 
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
