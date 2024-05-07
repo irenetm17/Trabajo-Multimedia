@@ -486,7 +486,7 @@ hr{
 		margin-top: 25px;
 		margin-bottom: 25px;
 		color: #fdeebc;
-		font-size: 60px;
+		font-size: 200%;
 	}
 	
 	#bot{
@@ -522,7 +522,7 @@ hr{
 		margin-top: 25px;
 		margin-bottom: 25px;
 		color: #0d1a4a;
-		font-size: 60px;
+		font-size: 200%;
 	}
 	#us{
 		color: white;
@@ -536,6 +536,13 @@ hr{
 	#redes{
 		font-family: "Bout", monospace;
 		margin:0px 35%;
+		display: flex;
+  	    flex-direction: row;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		width: 70%;
+  		margin: 0 auto;
+  		gap: 30px;
 	}
 	#redes table{
 		 border-collapse: separate;
@@ -552,15 +559,17 @@ hr{
   		gap: 30px;
 	}
 	#objetivo {
-    height: auto;
-    width: 70%;
-    object-fit: cover;
-	opacity: 0.8;
+   	 	height: auto;
+    	width: 70%;
+    	object-fit: cover;
+		opacity: 0.8;
+		background-color: #fffdba;
+		padding:20px 20px 20px 20px;
 	}
 	.objetivo-container {
-    display: flex;
-    justify-content: center; 
-    height: 350px;
-    width: 100%;
-    overflow: hidden;
-}
+    	display: flex;
+   		justify-content: center; 
+    	height: 200px;
+    	width: 100%;
+    	overflow: hidden;
+	}
