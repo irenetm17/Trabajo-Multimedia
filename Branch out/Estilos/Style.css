@@ -544,11 +544,11 @@ hr{
 	}
 
 	#pruebacomentarios{
-		width: 61%;
-		min-width: 500px;
-		margin:40px 40px;
-		position: relative;
-		transform: translate(-55%,+10%);
-		top: 50%;
-		left: 50%;
+		display: flex;
+  	    flex-direction: row;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		width: 70%;
+  		margin: 0 auto;
+  		gap: 30px;
 	}
