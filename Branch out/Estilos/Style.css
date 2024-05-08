@@ -8,9 +8,15 @@
     display: flex;
     justify-content: center; 
     background-color: black;
-    height: 555px;
+    height: 410px;
     width: 100%;
     overflow: hidden;
+}
+
+#background{
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 *{
@@ -163,7 +169,6 @@ body{
 	color: white;
 	font-size: 30px;
 }
-
 #info2{
 	font-family: "Bout", monospace;
 	width: 50%;
@@ -172,7 +177,6 @@ body{
 	margin-top: 25px;
 	margin-bottom: 25px;
 	color: white;
-	background-color: #002337;
 	font-size: 30px;
 }
 
@@ -364,6 +368,7 @@ hr{
 	align-items: center;
 	justify-content: space-between;
 	font-size: 20px;
+	color: white;
 	border-color: whitesmoke;
 	margin: 10px 10px;
 	padding: 10px 5px;
@@ -377,6 +382,7 @@ hr{
 .contenido{
     font-family: Bout;
     font-size: 20 px;
+    color: white;
 	position:relative;
 	margin: 10px 10px;
 	line-height: 20px;
@@ -449,7 +455,7 @@ hr{
 		margin-top: 25px;
 		margin-bottom: 25px;
 		color: #fdeebc;
-		font-size: 60px;
+		font-size: 200%;
 	}
 	
 	#bot{
@@ -485,10 +491,10 @@ hr{
 		margin-top: 25px;
 		margin-bottom: 25px;
 		color: #0d1a4a;
-		font-size: 60px;
+		font-size: 200%;
 	}
 	#us{
-		color: #070d38;
+		color: white;
 		text-align: justify;
 		font-size: 30px;
 		margin: 10px 10px;
@@ -499,8 +505,40 @@ hr{
 	#redes{
 		font-family: "Bout", monospace;
 		margin:0px 35%;
+		display: flex;
+  	    flex-direction: row;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		width: 70%;
+  		margin: 0 auto;
+  		gap: 30px;
 	}
 	#redes table{
 		 border-collapse: separate;
     	border-spacing: 40px;
+	}
+
+	#pruebacomentarios{
+		display: flex;
+  	    flex-direction: row;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		width: 70%;
+  		margin: 0 auto;
+  		gap: 30px;
+	}
+	#objetivo {
+   	 	height: auto;
+    	width: 70%;
+    	object-fit: cover;
+		opacity: 0.8;
+		background-color: #fffdba;
+		padding:20px 20px 20px 20px;
+	}
+	.objetivo-container {
+    	display: flex;
+   		justify-content: center; 
+    	height: 200px;
+    	width: 100%;
+    	overflow: hidden;
 	}

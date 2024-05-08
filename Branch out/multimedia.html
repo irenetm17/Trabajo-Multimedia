@@ -9,10 +9,7 @@
     		}
   		</style>
 	</head>
-	
-	<body style="background-image: url(./Imagenes/cielo.png)">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+	<body id="background" style="background-image: url(./Imagenes/cielo.png)">
 		<section id="inicio">
 			<div>
         
@@ -49,15 +46,15 @@
 						<div class="dropdown_content">
 							<ul class="dropdown_sub">
 								<li class="dropdown_li">
-									<a id="bot" href="#" class="dropdown_anchor">Project 1</a>
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 1</a>
 								</li>
 	
 								<li class="dropdown_li">
-									<a id="bot" href="#" class="dropdown_anchor">Project 2</a>
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 2</a>
 								</li>
 	
 								<li class="dropdown_li">
-									<a id="bot" href="#" class="dropdown_anchor">Project 3</a>
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 3</a>
 								</li>
 							</ul>
 						</div>
@@ -90,12 +87,8 @@
 			</div>
 	
 		</nav>
-
 		<!--Banner-->
 		<div class="banner-container">
-<<<<<<< Updated upstream
-    		<img id="banner" src="Imagenes/banner.jpeg"/>
-=======
     		<img id="banner" src="Imagenes/banner.png" alt="Banner que contiene el nombre del juego 'Branch Out'. De fondo se ve un bosque y unas montañas"/>
 		</div>
 
@@ -106,7 +99,6 @@
 		</div>
 		<div class="objetivo-container">
     		<img id="objetivo" src="Imagenes/objetivodinero.png" alt="Una barra que indica el progreso de las donaciones y un tiene un bosque debajo de la barra"/>
->>>>>>> Stashed changes
 		</div>
 
 		<!--Vídeo-->
@@ -117,10 +109,17 @@
 		</div>
 		<figure>
 		<center>
-    	<iframe width="50%" height="430px" src="https://www.youtube.com/embed/Oi3GoJvnSyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<iframe width="70%" height="430px" src="https://www.youtube.com/embed/Oi3GoJvnSyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     	<figcaption>Video promocional del juego</figcaption>
 		</center>
 		</figure>
+		<center>
+			<br><br><br><br>
+		<audio controls>
+			<source src="BGM/titulo.mp3" type="audio/mpeg">
+	  </audio>
+	  <figcaption>Audio del título de Branch Out</figcaption>
+	</center>
 		<br><br><br><br>
 
     	<!--Info-->
@@ -154,10 +153,6 @@
 						</td>
 					</tr>
 					<tr>
-						<td colspan="2"><div id="titulo_descripcion">Una nueva experiencia</div>
-						</td>
-					</tr>
-					<tr>
 						<td><ul><li>Niveles de plataformas clásicos, pero con un giro de tuerca que les dan un soplo de aire fresco. Al llegar a la meta, deberás recorrer el nivel de forma inversa</li></ul></td>
 						<td><image id="infoImage3" src="Imagenes/game2.png" alt="personaje principal saltando de una plataforma a otra"/></td>
 					</tr>
@@ -178,7 +173,7 @@
 		<!--Donaciones -->
 		<br><br>
 		<div id="donar" class="Colaboraciones">
-		<h1 id="titulo">Donaciones</h1>
+		<h1 id="titulo" >Donaciones</h1>
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
@@ -382,7 +377,7 @@
 					<tbody>
 					<tr>
 						<td>
-							<a href="https://www.instagram.com/ubisoft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+							<a href="https://www.instagram.com/branchout_game?igsh=MXZtandlemwwbjFiNg==">
 							<img src="./Imagenes/instagram.png" alt="Icono Instagram">
 						</td>
 						<td>
@@ -400,6 +395,9 @@
 
 			<!--FAQs-->
 			<div class="FAQs" id="preg_freq">
+				<div id="titulo">
+					<p>Preguntas Frecuentes</p>
+				</div>
 				<div class="pregunta">
 					<button class="accordion-container">
 						<h3>¿En qué plataformas se puede jugar?</h3> 
@@ -454,30 +452,37 @@
 			document.getElementById("VentanaDonacion").style.visibility = "hidden";
 		}
 	</script>
+	<body>
 		</div>
+
+			
+		<!--Prueba comentarios con disqus-->
+		<br><br>
+		<div id="titulo">
+				<p>¡Recuerda dejarnos tu comentario!</p>
+			</div>
+		<div id="pruebacomentarios">
+			<iframe src="https://embed.disqus.com/p/2yndb8d" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			<iframe src="https://embed.disqus.com/p/2yndc0i" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			<iframe src="https://embed.disqus.com/p/2ynde8s" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+
     <!--Caja de comentarios-->
 		<div id="comment-box">
 			<br>
 		</br>
 		<br>
 	</br>
-			<h2 id="coment">Leave a Comment</h2>
-			<form id="comment-form">
-			  <label for="name">Name:</label><br>
-			  <input type="text" id="name" name="name"><br>
-			  <label for="comment">Comment:</label><br>
-			  <textarea id="comment" name="comment"></textarea><br>
-			  <input type="submit" value="Submit">
-			</form>
-			<div id="comments">
-			  <!-- Comments will be loaded here -->
-			</div>
-			<div id="comment-box-inner">
-			  <div id="comment-box-content">
-				<br>
-			  </br>
-				<h3>Join our community!</h3>
-				<p>Sign up for our newsletter to get updates on new features and releases.</p>
+			<h2 id="coment"; style="color: white;">Leave a Comment:</h2>
+			<script src="https://utteranc.es/client.js"
+        		repo="irenetm17/Trabajo-Multimedia"
+        		issue-term="pathname"
+        		color theme="github-dark"
+        		crossorigin="anonymous"
+        		async>
+		</script>
+				<h3; style="color: white;">¡Únete a nuestra comunidad!</h3>
+				<p>Regístrate para recibir noticias y futuras entregas de videojuegos.</p>
 				<form id="newsletter-form">
 				  <label for="email">Email:</label><br>
 				  <input type="email" id="email" name="email" placeholder="email"><br>
