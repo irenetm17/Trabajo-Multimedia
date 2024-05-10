@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center; 
     background-color: black;
-    height: 555px;
+    height: 410px;
     width: 100%;
     overflow: hidden;
 }
@@ -258,9 +258,10 @@ hr{
 
 
 .Colaboraciones{
+	margin-left: 10%;
+	margin-right: 10%;
 	color: white;
-	margin-left:14% ;
-	margin-right:14%;
+	text-align: center;
 }
 
 .Colaboraciones > div{
@@ -300,33 +301,45 @@ hr{
 
 #Contribuir{
 	margin: 0px 0px 1em 1em;
-	color: white;
+	color: black;
 	width: 120px;
 	background-color: #5EC172;
 	top: 80%;
 }
 
 #VentanaDonacion{
-	visibility: hidden;
-	position: fixed;
-	top:35%;
-	left: 76%;
+	z-index: 10000;
+	visibility: hidden
 	padding: 10px ;
 	border-radius: 4px;
+	width: 350px;
+	height: 120px;
 	border:	3px solid whitesmoke;
-	background-image: url('Imagenes/cielo.png');
+	background-color: whitesmoke;
+	color: black;	
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+#VentanaDonacion h1{
+	position: relative;
+	margin-right: 20px;
+	top: 40px;
+	font-size: 200%;
 }
 
 #cerrar{
 	position: absolute;
-	top: 3%;
-	left: 90%;
-	width: 20px;
-	height: 20px;
+	top: 7%;
+	left: 92%;
+	width: 25px;
+	height: 25px;
+	color: black;;
+	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
-	color: white;
-	cursor: pointer;
 }
 
 .FAQs{
@@ -413,16 +426,11 @@ hr{
     overflow: hidden;
 }
 
-	.Colaboraciones{
-		color: white;
-		margin-left:14% ;
-		margin-right:14%;
-	}
 	.Colaboraciones > div{
 		display: inline-block;
 		margin:20px 20px;	
-		width: 200px;
-		height: 320px;
+		width: 320px;
+		height: 200px;
 		border-radius: 4px;
 		border:	3px solid whitesmoke;
 		position: relative;
@@ -439,46 +447,6 @@ hr{
 	.texto{
 		margin:20px 20px;
 	}
-	.boton{
-		margin:20px 20px;
-		height:30px;
-		width: 80px;
-		border-radius: 5px;
-		border: 0px;
-		cursor: pointer;
-		position: absolute;
-		top: 70%;
-	}
-	#Contribuir{
-		margin: 0px 0px 1em 1em;
-		color: white;
-		width: 120px;
-		background-color: #5EC172;
-		top: 80%;
-	}
-	#VentanaDonacion{
-		visibility: hidden;
-		position: fixed;
-		top:35%;
-		left: 76%;
-		padding: 10px ;
-		border-radius: 4px;
-		border:	3px solid whitesmoke;
-		background-image: url('./Imagenes/cielo.png');
-	}
-	#cerrar{
-		position: absolute;
-		top: 3%;
-		left: 90%;
-		width: 20px;
-		height: 20px;
-		background-color: transparent;
-		border-color: transparent;
-		color: white;
-		cursor: pointer;
-	}
-
-	
 	#titulo{
 		font-family: "Bout", monospace;
 		width: 50%;
@@ -487,7 +455,7 @@ hr{
 		margin-top: 25px;
 		margin-bottom: 25px;
 		color: #fdeebc;
-		font-size: 60px;
+		font-size: 200%;
 	}
 	
 	#bot{
@@ -523,7 +491,7 @@ hr{
 		margin-top: 25px;
 		margin-bottom: 25px;
 		color: #0d1a4a;
-		font-size: 60px;
+		font-size: 200%;
 	}
 	#us{
 		color: white;
@@ -537,6 +505,13 @@ hr{
 	#redes{
 		font-family: "Bout", monospace;
 		margin:0px 35%;
+		display: flex;
+  	    flex-direction: row;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		width: 70%;
+  		margin: 0 auto;
+  		gap: 30px;
 	}
 	#redes table{
 		 border-collapse: separate;
@@ -544,11 +519,26 @@ hr{
 	}
 
 	#pruebacomentarios{
-		width: 61%;
-		min-width: 500px;
-		margin:40px 40px;
-		position: relative;
-		transform: translate(-55%,+10%);
-		top: 50%;
-		left: 50%;
+		display: flex;
+  	    flex-direction: row;
+  		justify-content: space-evenly;
+  		align-items: center;
+  		width: 70%;
+  		margin: 0 auto;
+  		gap: 30px;
+	}
+	#objetivo {
+   	 	height: auto;
+    	width: 70%;
+    	object-fit: cover;
+		opacity: 0.8;
+		background-color: #fffdba;
+		padding:20px 20px 20px 20px;
+	}
+	.objetivo-container {
+    	display: flex;
+   		justify-content: center; 
+    	height: 200px;
+    	width: 100%;
+    	overflow: hidden;
 	}

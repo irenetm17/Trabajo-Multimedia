@@ -46,15 +46,15 @@
 						<div class="dropdown_content">
 							<ul class="dropdown_sub">
 								<li class="dropdown_li">
-									<a id="bot" href="#" class="dropdown_anchor">Project 1</a>
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 1</a>
 								</li>
 	
 								<li class="dropdown_li">
-									<a id="bot" href="#" class="dropdown_anchor">Project 2</a>
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 2</a>
 								</li>
 	
 								<li class="dropdown_li">
-									<a id="bot" href="#" class="dropdown_anchor">Project 3</a>
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 3</a>
 								</li>
 							</ul>
 						</div>
@@ -87,10 +87,18 @@
 			</div>
 	
 		</nav>
-
 		<!--Banner-->
 		<div class="banner-container">
-    		<img id="banner" src="Imagenes/banner.jpeg"/>
+    		<img id="banner" src="Imagenes/banner.png" alt="Banner que contiene el nombre del juego 'Branch Out'. De fondo se ve un bosque y unas montañas"/>
+		</div>
+
+		<!--objetivos de dinero-->
+		<br><br>
+		<div>
+			<p id="titulo_descripcion">Objetivo a recaudar</p>
+		</div>
+		<div class="objetivo-container">
+    		<img id="objetivo" src="Imagenes/objetivodinero.png" alt="Una barra que indica el progreso de las donaciones y un tiene un bosque debajo de la barra"/>
 		</div>
 
 		<!--Vídeo-->
@@ -101,7 +109,7 @@
 		</div>
 		<figure>
 		<center>
-    	<iframe width="50%" height="430px" src="https://www.youtube.com/embed/Oi3GoJvnSyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<iframe width="70%" height="430px" src="https://www.youtube.com/embed/Oi3GoJvnSyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     	<figcaption>Video promocional del juego</figcaption>
 		</center>
 		</figure>
@@ -123,7 +131,7 @@
 			<div id="info1">
 				<p>Es tu primer día de acampada, y antes de darte cuenta... ¡TE HAS QUEDADO DORMIDO! Ahora vas a tener que recorrer las montañas y bosques de tu alrededor para encontrar los palos que no has recogido cuando aún tenías tiempo. Pero cuidado... La noche está al caer, y si no tienes una fogata lista antes de que caiga la noche, te perderás entre los árboles del bosque.</p>
 				<br>
-				<image id="infoImage1" src="Imagenes/portada.png"/>
+				<image id="infoImage1" src="Imagenes/portada.png" alt="En un bosque tranquilo, bajo un cielo azul y nubes dispersas, un personaje humano descansa profundamente junto a una tienda de campaña naranja. Las llamas de una fogata arden a su lado, mientras que el letrero ‘BRANCH OUT’ en letras rojas y blancas parece estar hecho de madera. El estilo pixelado de la imagen recuerda a los videojuegos retro"/>
 			</div>
 			<div id="info2">
 
@@ -137,7 +145,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td><image id="infoImage2" src="Imagenes/game1.png"/></td>
+						<td><image id="infoImage2" src="Imagenes/game1.png" alt="Hay un personaje parado junto a una estructura de madera y una tienda de campaña, y un poco mas hacia la derecha un telescopio. En el fondo se aprecia una montañas"/></td>
 						<td><ul><li>Arte cartoon y pixel art, que dota de personalidad a la acción del juego.</li></ul></td>
 					</tr>
 					<tr>
@@ -146,26 +154,26 @@
 					</tr>
 					<tr>
 						<td><ul><li>Niveles de plataformas clásicos, pero con un giro de tuerca que les dan un soplo de aire fresco. Al llegar a la meta, deberás recorrer el nivel de forma inversa</li></ul></td>
-						<td><image id="infoImage3" src="Imagenes/game2.png"/></td>
+						<td><image id="infoImage3" src="Imagenes/game2.png" alt="personaje principal saltando de una plataforma a otra"/></td>
 					</tr>
 					<tr>
 						<td colspan="2"><div id="titulo_descripcion">Un gran reto</div>
 						</td>
 					</tr>
 					<tr>
-						<td><image id="infoImage4" src="Imagenes/game3.png"/></td>
+						<td><image id="infoImage4" src="Imagenes/game3.png" alt="Personaje principal en un plataforma llendo hacia adelanta"/></td>
 						<td><ul><li>Desafíos extra para jugadores más avanzados. Cada nivel contiene 100 monedas. ¿Serás capaz de conseguirlas todas y superar el nivel a la vez?</li></ul></td>
 					</tr>
 				</tbody>
 			</table>
-			<image id="decoImage" src="Imagenes/decoracion.png"/>
+			<image id="decoImage" src="Imagenes/decoracion.png" alt="Una tienda de campaña, un telecospio y un tendedero" />
 			<hr>
 		</section>
       	
 		<!--Donaciones -->
 		<br><br>
 		<div id="donar" class="Colaboraciones">
-		<h1 id="titulo">Donaciones</h1>
+		<h1 id="titulo" >Donaciones</h1>
 		<div class="Cuadro">
 			<div class="texto">
 				<div id="tipo">
@@ -202,7 +210,6 @@
 				<p> Consigue el juego cuando sea lanzado.</p>	
 				</div>
 				<div>
-				
 				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
 			</div>
 		</div>
@@ -214,10 +221,7 @@
 				<div id="precio"><h3>30$</h3></div>
 				<p> Consigue el juego, acceso a la Beta, el soundtrack y tendremos en cuenta tu opinión.</p>	
 				</div>
-				<div>
-				
 				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
-			</div>
 		</div>
 		<div class="Cuadro">
 			<div class="texto">
@@ -352,7 +356,7 @@
 		<div id="VentanaDonacion" style="visibility: hidden;">
 
 		<button onclick="cerrar()" id="cerrar">X</button>
-		<h1 >Gracias por la donacion</h1>
+		<center><h1 >Gracias por la donacion</h1></center>
 	</div>
 	</div>
 
@@ -373,16 +377,16 @@
 					<tbody>
 					<tr>
 						<td>
-							<a href="https://www.instagram.com/ubisoft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-							<img src="./Imagenes/instagram.png">
+							<a href="https://www.instagram.com/branchout_game?igsh=MXZtandlemwwbjFiNg==">
+							<img src="./Imagenes/instagram.png" alt="Icono Instagram">
 						</td>
 						<td>
 							<a href="https://youtube.com/@IbaiLlanos?si=LsHkRH2agbTwUe9M">
-							<img src="./Imagenes/youtube.png">
+							<img src="./Imagenes/youtube.png" alt="Icono Youtube">
 						</td>
 						<td>
 							<a href="https://www.tiktok.com/@charlidamelio">
-							<img src="./Imagenes/tiktok.png">
+							<img src="./Imagenes/tiktok.png" alt="Icono de Tiktok">
 						</td>
 					</tr>
 				</table>
@@ -448,18 +452,19 @@
 			document.getElementById("VentanaDonacion").style.visibility = "hidden";
 		}
 	</script>
+	<body>
 		</div>
 
 			
 		<!--Prueba comentarios con disqus-->
 		<br><br>
-		<div id="pruebacomentarios">
-			<div id="titulo">
+		<div id="titulo">
 				<p>¡Recuerda dejarnos tu comentario!</p>
 			</div>
-			<iframe src="https://embed.disqus.com/p/2yndb8d" width="380" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-			<iframe src="https://embed.disqus.com/p/2yndc0i" width="380" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-			<iframe src="https://embed.disqus.com/p/2ynde8s" width="380" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+		<div id="pruebacomentarios">
+			<iframe src="https://embed.disqus.com/p/2yndb8d" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			<iframe src="https://embed.disqus.com/p/2yndc0i" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			<iframe src="https://embed.disqus.com/p/2ynde8s" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
 		</div>
 
     <!--Caja de comentarios-->
@@ -468,20 +473,19 @@
 		</br>
 		<br>
 	</br>
-			<h2 id="coment"; style="color: white;">Leave a Comment:</h2>
-			<script src="https://utteranc.es/client.js"
-        		repo="irenetm17/Trabajo-Multimedia"
-        		issue-term="pathname"
-        		color theme="github-dark"
-        		crossorigin="anonymous"
-        		async>
-		</script>
-				<h3; style="color: white;">¡Únete a nuestra comunidad!</h3>
+				<h3; style="color: white; font-size:x-large;">¡Únete a nuestra comunidad!</h3>
 				<p>Regístrate para recibir noticias y futuras entregas de videojuegos.</p>
 				<form id="newsletter-form">
 				  <label for="email">Email:</label><br>
-				  <input type="email" id="email" name="email"><br>
+				  <input type="email" id="Email" name="email" placeholder="email"><br>
 				  <input type="submit" value="Sign Up">
+				  
+<script> document.getElementById("newsletter-form") 
+.addEventListener("submit", function(event) 
+{ event.preventDefault(); var email = document.getElementById("Email").value; if (email === "") 
+{ alert("Por favor, ingresa un correo electrónico."); } 
+else { alert("¡Gracias, " + email + "! Recibirás nuevas noticias pronto!"); } }); 
+</script>
 				</form>
 			  </div>
 			</div>
