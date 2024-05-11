@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Branch out</title>
+		<link rel="stylesheet" type="text/css" href="Estilos/Style.css" />
+		<style>
+   			body {
+      			font-family:"Bout", sans-serif;
+    		}
+  		</style>
+	</head>
+	<body id="background" style="background-image: url(./Imagenes/cielo.png)">
+		<section id="inicio">
+			<div>
+        
+	<section id="inicio">
+
+		<!--Menú Dropdown-->
+		<nav class="nav">
+			<div class="nav_container">
+					
+				<a href="#menu" class="nav_menu">
+					<img src="./Imagenes/assets_menu/menu.svg" class="nav_icon">
+				</a>
+	
+				<a href="#" class="nav_menu nav_menu--second">
+					<img src="./Imagenes/assets_menu/close.svg" class="nav_icon">
+				</a>
+	
+				<ul class="dropdown" id="menu">
+					<li class="dropdown_list">
+						<a href="#Inicio" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/house.svg" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Inicio</button>
+						</a>
+					</li>
+	
+					<li class="dropdown_list">
+						<a href="#" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/projects.svg" class="dropdown_icon">
+							<button id="bot" class="dropdown_span"> Projects</button>
+							<img src="./Imagenes/assets_menu/down.svg" class="dropdown_arrow">
+	
+							<input type="checkbox" class="dropdown_check">
+						</a>
+						<div class="dropdown_content">
+							<ul class="dropdown_sub">
+								<li class="dropdown_li">
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 1</a>
+								</li>
+	
+								<li class="dropdown_li">
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 2</a>
+								</li>
+	
+								<li class="dropdown_li">
+									<a id="bot" href="proyectos.html" class="dropdown_anchor">Proyecto 3</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="dropdown_list">
+						<a href="#donar" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/dinero.png" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Donaciones</button>
+						</a>
+					</li>
+					
+	
+					<li class="dropdown_list">
+						<a href="#preg_freq" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/FAQs.png" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Preguntas frecuentes</button>
+						</a>
+					</li>
+
+					<li class="dropdown_list">
+						<a href="#coment" class="dropdown_link">
+							<img src="./Imagenes/assets_menu/help.svg" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Deja tu comentario</button>
+						</a>
+					</li>
+					<li class="dropdown_list">
+						<a href="#empresa" class="dropdown_link">
+							<img src="./Imagenes/ramones_logo.png" class="dropdown_icon">
+							<button id="bot" class="dropdown_span">Conoce nuestra empresa</button>
+						</a>
+					</li>
+	
+				</ul>
+	
+			</div>
+	
+		</nav>
+		<!--Banner-->
+		<div class="banner-container">
+    		<img id="banner" src="Imagenes/banner.png" alt="Banner que contiene el nombre del juego 'Branch Out'. De fondo se ve un bosque y unas montañas"/>
+		</div>
+
+		<!--objetivos de dinero-->
+		<br><br>
+		<div>
+			<p id="titulo_descripcion">Objetivo a recaudar</p>
+		</div>
+		<div class="objetivo-container">
+    		<img id="objetivo" src="Imagenes/objetivodinero.png" alt="Una barra que indica el progreso de las donaciones y un tiene un bosque debajo de la barra"/>
+		</div>
+
+		<!--Vídeo-->
+
+		<br><br><br><br>
+		<div id="titulo">
+			<p> ¡Ya disponible la vista previa!</p>
+		</div>
+		<figure>
+    		<div class="video-responsive">
+        		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Oi3GoJvnSyI" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    		</div>
+        	<figcaption>Video promocional del juego</figcaption>
+		</figure>
+
+		<center>
+			<br><br><br><br>
+		<audio controls>
+			<source src="BGM/titulo.mp3" type="audio/mpeg">
+	  </audio>
+	  <figcaption>Audio del título de Branch Out</figcaption>
+	</center>
+		<br><br><br><br>
+
+    	<!--Info-->
+			<hr>
+			<div id="titulo">
+				<p id="Inicio" lang="en">¡Run for your Branch!</p>
+			</div>
+    
+			<div id="info1">
+				<p>Es tu primer día de acampada, y antes de darte cuenta... ¡TE HAS QUEDADO DORMIDO! Ahora vas a tener que recorrer las montañas y bosques de tu alrededor para encontrar los palos que no has recogido cuando aún tenías tiempo. Pero cuidado... La noche está al caer, y si no tienes una fogata lista antes de que caiga la noche, te perderás entre los árboles del bosque.</p>
+				<br>
+				<image id="infoImage1" src="Imagenes/portada.png" alt="En un bosque tranquilo, bajo un cielo azul y nubes dispersas, un personaje humano descansa profundamente junto a una tienda de campaña naranja. Las llamas de una fogata arden a su lado, mientras que el letrero ‘BRANCH OUT’ en letras rojas y blancas parece estar hecho de madera. El estilo pixelado de la imagen recuerda a los videojuegos retro"/>
+			</div>
+			<div id="info2">
+
+				<p>Branch Out es un juego 2D de plataformas en el que tendrás que superar niveles contrarreloj para vencerlo. Avanza entre arañas y murciélagos, salta sobre ríos, y recoge palos en los extremos de cada nivel, para luego traerlos a tu campamento. Todo antes de que caiga la noche, y te pierdas en el bosque.</p>
+			</div>
+			<hr>
+			<table id="infoTabla">
+				<tbody>
+					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Estilo visual</div>
+						</td>
+					</tr>
+					<tr>
+						<td><image id="infoImage2" src="Imagenes/game1.png" alt="Hay un personaje parado junto a una estructura de madera y una tienda de campaña, y un poco mas hacia la derecha un telescopio. En el fondo se aprecia una montañas"/></td>
+						<td><ul><li>Arte cartoon y pixel art, que dota de personalidad a la acción del juego.</li></ul></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Una nueva experiencia</div>
+						</td>
+					</tr>
+					<tr>
+						<td><ul><li>Niveles de plataformas clásicos, pero con un giro de tuerca que les dan un soplo de aire fresco. Al llegar a la meta, deberás recorrer el nivel de forma inversa</li></ul></td>
+						<td><image id="infoImage3" src="Imagenes/game2.png" alt="personaje principal saltando de una plataforma a otra"/></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="titulo_descripcion">Un gran reto</div>
+						</td>
+					</tr>
+					<tr>
+						<td><image id="infoImage4" src="Imagenes/game3.png" alt="Personaje principal en un plataforma llendo hacia adelanta"/></td>
+						<td><ul><li>Desafíos extra para jugadores más avanzados. Cada nivel contiene 100 monedas. ¿Serás capaz de conseguirlas todas y superar el nivel a la vez?</li></ul></td>
+					</tr>
+				</tbody>
+			</table>
+			<image id="decoImage" src="Imagenes/decoracion.png" alt="Una tienda de campaña, un telecospio y un tendedero" />
+			<hr>
+		</section>
+      	
+		<!--Donaciones -->
+		<br><br>
+		<div id="donar" class="Colaboraciones">
+		<h1 id="titulo" >Donaciones</h1>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Support</h3>
+
+				</div>
+				<div id="precio"><h3>1$</h3></div>
+				<p> Si aún no estas seguro/a de querer el juego pero quieres apoyarlo porque te ha gustado, tienes este tier para ti.</p>	
+			</div>
+			<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Mid support</h3>
+				</div>
+				<div id="precio"><h3>10$</h3></div>
+				<p>Acceso a información mensual sobre el desarrollo y algunos posters. </p>	
+				</div>
+				<div>
+				
+				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Big support</h3>
+				</div>
+				<div id="precio"><h3>20$</h3></div>
+				<p> Consigue el juego cuando sea lanzado.</p>	
+				</div>
+				<div>
+				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Lil helper</h3>
+				</div>
+				<div id="precio"><h3>30$</h3></div>
+				<p> Consigue el juego, acceso a la Beta, el soundtrack y tendremos en cuenta tu opinión.</p>	
+				</div>
+				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Helper</h3>
+				</div>
+				<div id="precio"><h3>50$</h3></div>
+				<p> Acceso a la Beta del juego y tomaremos tu opinión sobre aspectos del juego y tu nombre aparecerá en los créditos finales.</p>	
+				</div>
+				<div>
+				
+				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Big helper</h3>
+				</div>
+				<div id="precio"><h3>70$</h3></div>
+				<p> Art book del juego, además podras hablar con nosotros sobre el juego y tendrás acceso a todos los lanzamientos de la Beta y Alpha mientras está en desarrollo.</p>	
+				</div>
+				<div>
+				
+				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Fan</h3>
+				</div>
+				<div id="precio"><h3>100$</h3></div>
+				<p>Art book completo y a color con las ideas descartadas, ideas usadas, lore, etc. </p>	
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Medium fan</h3>
+				</div>
+				<div id="precio"><h3>150$</h3></div>
+				<p> Figura y posters de edicion limitada del personaje principal y el juego.</p>	
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Big fan</h3>
+				</div>
+				<div id="precio"><h3>220$</h3></div>
+				<p> Tu nombre aparecerá en un coleccionable del juego y con un logro asociado con tu nombre.</p>	
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Great fan</h3>
+				</div>
+				<div id="precio"><h3>300$</h3></div>
+				<p> Un nivel secreto dedicado a todos los donantes de este tier. Podreis ayudarnos a diseñar vuestro personaje y dialogo en este nivel. </p>
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Huge fan</h3>
+				</div>
+				<div id="precio"><h3>400$</h3></div>
+				<p> Crea un objeto en el juego que ayude a nuestro protagonista con tu nombre referenciado en él.</p>
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Nº1 Fan</h3>
+				</div>
+				<div id="precio"><h3>500$</h3></div>
+				<p> Ayuda a crear un enemigo del juego, trabaja con nosotros en su creación, comportamientos y zonas de aparición.</p>	
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Branch Out enjoyer</h3>
+				</div>
+				<div id="precio"><h3>750$</h3></div>
+				<p> Crea un nivel entero del juego junto a nosotros, su diseño, plataformar, monedas, enemigos y secretos.</p>	
+				</div>
+				<div>
+				
+				<button class="boton"  id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+		<div class="Cuadro">
+			<div class="texto">
+				<div id="tipo">
+				<h3 lang="en">Branch Out lover</h3>
+				</div>
+				<div id="precio"><h3>1000$</h3></div>
+				<p> Trabaja con nosotros directamente en la creación del juego. Además recibirás todas las recompensas físicas y una figura exclusiva de nuestro personaje principal de 30cm.</p>	
+				</div>
+				<div>
+				<button class="boton" id="Contribuir" onclick="donar()">Contribuir</button>
+			</div>
+		</div>
+      
+		<div id="VentanaDonacion" style="visibility: hidden;">
+
+		<button onclick="cerrar()" id="cerrar">X</button>
+		<center><h1 >Gracias por la donacion</h1></center>
+	</div>
+	</div>
+
+	<!--About us y redes sociales-->
+		<hr>
+		<div class="FAQs">
+			<div id="titulo">
+				<p>¿Quienes somos?</p>				
+				<img src="./Imagenes/ramones_logo.png">
+			</div>
+			<div id="us">
+				<p>Somos un grupo de apasionados por los videojuegos, reunidos para crear nuevas historias y aventuras entretenidas para diferentes públicos. Nos encanta juntarnos a </p>
+			</div>
+			<div id="titulo">
+				<p>Encuentranos en redes sociales:</p>
+			</div>
+			<div id="redes">
+				<table>
+					<tbody>
+					<tr>
+						<td>
+							<a href="https://www.instagram.com/branchout_game?igsh=MXZtandlemwwbjFiNg==">
+							<img src="./Imagenes/instagram.png" alt="Icono Instagram">
+						</td>
+						<td>
+							<a href="https://youtube.com/@IbaiLlanos?si=LsHkRH2agbTwUe9M">
+							<img src="./Imagenes/youtube.png" alt="Icono Youtube">
+						</td>
+						<td>
+							<a href="https://www.tiktok.com/@charlidamelio">
+							<img src="./Imagenes/tiktok.png" alt="Icono de Tiktok">
+						</td>
+					</tr>
+				</table>
+			</div> 
+		</div>
+
+			<!--FAQs-->
+			<div class="FAQs" id="preg_freq">
+				<div id="titulo">
+					<p>Preguntas Frecuentes</p>
+				</div>
+				<div class="pregunta">
+					<button class="accordion-container">
+						<h3>¿En qué plataformas se puede jugar?</h3> 
+							
+					</button>
+					<div class="contenido">
+						<p>Se puede jugar en ordenador/PC, es necesario un Windows 10. 
+						</p>
+					</div>	
+				</div>
+
+				<div class="pregunta">
+					<button class="accordion-container">
+						<h3>¿A qué género pertenece?</h3> 
+							
+					</button>
+					<div class="contenido">
+						<p>Consiste de un juego de acción y aventura multiplataformas indie.
+						</p>
+					</div>	
+				</div>
+
+				<div class="pregunta">
+					<button class="accordion-container">
+						<h3 >¿Es necesario un mando para jugarlo? </h3>
+							
+					</button>
+					<div class="contenido">
+						<p>Se puede jugar con teclado, no es necesario un mando
+						</p>
+					</div>	
+				</div>
+
+				<div class="pregunta">
+					<button class="accordion-container">
+						<h3>¿En qué idioma se puede jugar?</h3> 
+							
+					</button>
+					<div class="contenido">
+						<p>Los menús de inicio están en español, sin embargo no hay diálogos durante el gameplay que te impongan saber el idioma.
+						</p>
+					</div>	
+				</div>
+			</div>
+		<script src="Estilos/script.js"></script>
+	</body>
+	<script>
+		function donar(){
+			document.getElementById('VentanaDonacion').style.visibility = "visible";
+		}
+		function cerrar(){
+			document.getElementById("VentanaDonacion").style.visibility = "hidden";
+		}
+	</script>
+	<body>
+		</div>
+
+			
+		<!--Prueba comentarios con disqus-->
+		<br><br>
+		<div id="titulo">
+				<p id="coment">¡Recuerda dejarnos tu comentario!</p>
+			</div>
+		<div id="pruebacomentarios">
+			<iframe src="https://embed.disqus.com/p/2yndb8d" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			<iframe src="https://embed.disqus.com/p/2yndc0i" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			<iframe src="https://embed.disqus.com/p/2ynde8s" width="35%" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+    <!--Empresa-->
+    <br><br>
+	<div id="empresa" class="FAQs">
+		<div id="titulo">
+			<p>Nuestra empresa: Los ramones
+			<img src="./Imagenes/ramones_logo.png"></p>				
+		</div>
+		<div id="departamentos">
+			<table>
+				<tr>
+					<td>
+						Departamento de arte:
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Departamento de programación:
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Departamento de Marketing:
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+    <!--Comunidad-->
+		<div id="comment-box">
+			<br>
+		</br>
+		<br>
+	</br>
+				<h3; style="color: white; font-size:x-large;">¡Únete a nuestra comunidad!</h3>
+				<p>Regístrate para recibir noticias y futuras entregas de videojuegos.</p>
+				<form id="newsletter-form">
+				  <label for="email">Email:</label><br>
+
+				  <input type="email" id="Email" name="email" placeholder="email"><br>
+
+				  <input type="submit" value="Sign Up">
+				  
+<script> document.getElementById("newsletter-form") 
+.addEventListener("submit", function(event) 
+{ event.preventDefault(); var email = document.getElementById("Email").value; if (email === "") 
+{ alert("Por favor, ingresa un correo electrónico."); } 
+else { alert("¡Gracias, " + email + "! Recibirás nuevas noticias pronto!"); } }); 
+</script>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		
+
+    <!--Disclaimer-->
+    <br><br>
+		<div id="disclaimer">
+			<p>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.</p>
+		</div>
+	</body>
+</html>
