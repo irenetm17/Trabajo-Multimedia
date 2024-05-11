@@ -435,6 +435,18 @@ hr{
 	font-size: 300%;
 }
 	
+#titulo2{
+	border-radius: 20px;
+	font-family: "Bout", monospace;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #2a5496;
+	font-size: 300%;
+	background-color: lightblue;
+}
 #bot{
 	background-color: transparent;
 	font-family: "Bout";
@@ -480,17 +492,6 @@ hr{
 	.texto{
 		margin:20px 20px;
 	}
-	#titulo{
-		font-family: "Bout", monospace;
-		width: 50%;
-		text-align: center;
-		margin-left: 25%;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		color: #fdeebc;
-		font-size: 200%;
-	}
-	
 	#bot{
 		background-color: transparent;
 		font-family: "Bout";
@@ -516,7 +517,7 @@ hr{
 	#titulo_descripcion{
 		border-radius: 20px;
 		background-color: #fffdba;
-		background-image: url("./Imagenes/tierra.png");
+		background-image: url('./Imagenes/tierra.png');
 		font-family: "Bout", monospace;
 		width: 50%;
 		text-align: center;
