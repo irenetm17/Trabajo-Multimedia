@@ -400,6 +400,8 @@ hr{
 	margin-bottom: 25px;
 	color: rgb(253, 238, 188);
 	font-size: 300%;
+}
+	
 #bot{
 	background-color: transparent;
 	font-family: "Bout";
@@ -565,12 +567,4 @@ hr{
 		font-family: "Bout",sans-serif;
 		font-size:100%;
 		font-color: white;
-	}
-	#Depaconte{
-		display: inline-block;
-		font-family: Bout;
-		color: white;
-		margin: 10px;
-		vertical-align: top;
-		position: relative;
 	}
