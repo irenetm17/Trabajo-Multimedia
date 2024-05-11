@@ -568,3 +568,11 @@ hr{
 		font-size:100%;
 		font-color: white;
 	}
+	#Depaconte{
+		display: inline-block;
+		font-family: Bout;
+		color: white;
+		margin: 10px;
+		vertical-align: top;
+		position: relative;
+	}
