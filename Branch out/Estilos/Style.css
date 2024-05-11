@@ -343,7 +343,7 @@ hr{
 }
 
 .FAQs{
-
+	background-color: #0761ab;
 	width: 60%;
 	min-width: 500px;
 	border: 3px solid whitesmoke;
@@ -399,7 +399,7 @@ hr{
 	margin-top: 25px;
 	margin-bottom: 25px;
 	color: rgb(253, 238, 188);
-	font-size: 60px;
+	font-size: 300%;
 }
 	
 #bot{
@@ -416,7 +416,7 @@ hr{
 }
 
 #disclaimer{
-	background-color: #191c40;
+	background-color: black;
 	color:white;
 	font-family: "Bout";
     height: 60px;
@@ -527,18 +527,44 @@ hr{
   		margin: 0 auto;
   		gap: 30px;
 	}
-	#objetivo {
-   	 	height: auto;
-    	width: 70%;
-    	object-fit: cover;
-		opacity: 0.8;
-		background-color: #fffdba;
-		padding:20px 20px 20px 20px;
-	}
 	.objetivo-container {
     	display: flex;
-   		justify-content: center; 
-    	height: 200px;
-    	width: 100%;
-    	overflow: hidden;
+    	justify-content: center;
+    	align-items: center; 
+    	height: 25%;
+	}
+
+	#objetivo {
+    	max-width: 70%; 
+    	max-height: 70%; 
+    	padding: 20px 20px 20px 20px;
+    	background-color:#fffdba; 
+	}
+
+	.video-responsive {
+    	position: relative;
+    	padding-bottom: 28.40%;
+    	height: 0;
+    	margin-bottom:0;
+	}
+
+	.video-responsive iframe {
+	    position: absolute;
+    	top: 0;
+    	left: 25%;
+    	width: 50%;
+    	height: 100%;
+	}
+
+	figcaption {
+    	text-align: center;
+    	margin-top:0;
+    	font-family: "Bout", sans-serif;
+    	font-size:125%;
+
+	}
+	#departamentos{
+		font-family: "Bout",sans-serif;
+		font-size:100%;
+		font-color: white;
 	}
